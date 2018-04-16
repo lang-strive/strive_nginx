@@ -53,6 +53,7 @@ yum install -y openssl openssl-devel
 ```
 
 ## 3.nginx安装:
+``` bash
 1.解压
 tar -zxvf nginx-1.12.2.tar.gz
 2.cd 到解压目录
@@ -107,3 +108,4 @@ yum install -y lrzsz
 
 12.Linux开启80端口
 https://www.cnblogs.com/cnsevennight/archive/2016/06/27/5619424.html
+```
