@@ -1,5 +1,5 @@
 ## nginx:
-  ``` bash
+``` bash
   1.应用场景
   1.http服务器
   静态资源 图片 js css
