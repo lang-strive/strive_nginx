@@ -1,32 +1,40 @@
-nginx:
-1.应用场景
-1.http服务器
-静态资源 图片 js css
-2.虚拟主机
-*虚拟出多个主机，域名80
-IP
-端口
-域名
-3.nginx反向代理
-正向代理:
-从内网到外网的过程属于正向代理.
-反向代理:
-从外网到内网的过程属于反向代理.
-4.负载均衡
+## nginx:
+  ``` bash
+  1.应用场景
+  1.http服务器
+  静态资源 图片 js css
+  2.虚拟主机
+  *虚拟出多个主机，域名80
+  IP
+  端口
+  域名
+  3.nginx反向代理
+  正向代理:
+  从内网到外网的过程属于正向代理.
+  反向代理:
+  从外网到内网的过程属于反向代理.
+  4.负载均衡
+```
 
-openresty:
+## openresty:
+``` bash
 nginx+lua
+```
 
-
-1.nginx安装:
-网址:
+## 1.nginx安装:
+> 网址:
+``` bash
 http://nginx.org/en/download.html
-linux安装:
+```
+> linux安装:
+``` bash
 wget http://nginx.org/download/nginx-1.12.2.tar.gz
+```
 
-2.安装前提:
-·	因为nginx是c开发的
+## 2.安装前提:
+> 因为nginx是c开发的
 
+``` bash
 1.gcc
 对源码进行编译
 yum install gcc-c++
@@ -35,14 +43,16 @@ yum install gcc-c++
 perl库 包括了perl兼容的正则表达式 nginx的http模块使用的是pcre来解析正则
 yum install -y pcre pcre-devel
 
+
 3.zlib
 压缩和解压的库 nginx 使用zlib对http包进行 gzip
 yum install -y zlib zlib-devel
 
 4.openssl
 yum install -y openssl openssl-devel
+```
 
-3.nginx安装:
+## 3.nginx安装:
 1.解压
 tar -zxvf nginx-1.12.2.tar.gz
 2.cd 到解压目录
